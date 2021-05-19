@@ -388,9 +388,10 @@ FodyWeavers.xsd
 *.sln.iml
 
 /FakerInput Setup/%this%.CA.dll
-/FakerInput Setup/Files/
+/FakerInput Setup/Files/*
 /FakerInput Setup/FakerInput.wxs
 /FakerInput Setup/FakerInput Setup.exe
 /FakerInput Setup/ManagedDevcon.dll
 FakerInput.wixobj
 FakerInput.wixpdb
+!/FakerInput Setup/Files/LICENSE.rtf

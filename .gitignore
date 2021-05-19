@@ -386,3 +386,9 @@ FodyWeavers.xsd
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+/FakerInput Setup/%this%.CA.dll
+/FakerInput Setup/Files/
+/FakerInput Setup/FakerInput.wxs
+/FakerInput Setup/FakerInput Setup.exe
+/FakerInput Setup/ManagedDevcon.dll

@@ -34,6 +34,15 @@ namespace FakerInput_Setup
             {
                 result = ActionResult.Success;
             }
+            else
+            {
+                // Driver install cancelled or failed. Remove virtual device
+                string instanceId = Util.FakerInputInstanceId();
+                if (!string.IsNullOrEmpty(instanceId))
+                {
+                    Devcon.Remove(Util.sysGuid, instanceId);
+                }
+            }
 
             //System.Threading.Thread.Sleep(5000);
 

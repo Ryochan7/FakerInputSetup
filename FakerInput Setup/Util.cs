@@ -83,7 +83,7 @@ namespace FakerInput_Setup
             IntPtr deviceInfoSet = NativeMethods.SetupDiGetClassDevs(ref searchGuid, null, 0, 0);
             for (int i = 0; !devmatch && NativeMethods.SetupDiEnumDeviceInfo(deviceInfoSet, i, ref deviceInfoData); i++)
             {
-                session.Log($"ITER {i}");
+                //session.Log($"ITER {i}");
                 if (NativeMethods.SetupDiGetDeviceProperty(deviceInfoSet, ref deviceInfoData, ref NativeMethods.DEVPKEY_Device_InstanceId, ref propertyType,
                     dataBuffer, dataBuffer.Length, ref requiredSize, 0))
                 {
@@ -96,7 +96,7 @@ namespace FakerInput_Setup
 
             if (devmatch)
             {
-                session.Log("FOUND MATCH");
+                //session.Log("FOUND MATCH");
                 if (NativeMethods.SetupDiGetDeviceProperty(deviceInfoSet, ref deviceInfoData, ref prop, ref propertyType,
                     dataBuffer, dataBuffer.Length, ref requiredSize, 0))
                 {

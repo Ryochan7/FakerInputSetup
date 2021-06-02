@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="bf63c434-bf91-4666-b817-ad7b5c249e93" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.0.0.1" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryochan7">
+  <Product Id="bf63c434-bf91-4666-b817-ad7b5c249e94" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.0.0.2" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryochan7">
     <Package InstallerVersion="200" Compressed="yes" Platform="x64" SummaryCodepage="Windows-1252" InstallScope="perMachine" Languages="1033" />
     <Media Id="1" Cabinet="FakerInput.cab" EmbedCab="yes" />
 
@@ -38,6 +38,8 @@
 
     <WixVariable Id="WixUILicenseRtf" Value="Files\LICENSE.rtf" />
 
+    <MajorUpgrade AllowDowngrades="no" AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of FakerInput was already found. Please uninstall the currently installed product first." Schedule="afterInstallInitialize" />
+
     <CustomAction Id="Set_InstallAction_Props" Property="InstallAction" Value="INSTALLDIR=[INSTALLDIR];INSTALLDIR=[INSTALLDIR];UILevel=[UILevel];ProductCode=[ProductCode];ADDLOCAL=[ADDLOCAL];ADDFEATURES=[ADDFEATURES]" />
     <CustomAction Id="InstallAction" BinaryKey="InstallAction_File" DllEntry="InstallAction" Return="check" Impersonate="no" Execute="deferred" />
     <CustomAction Id="Set_RemoveAction_Props" Property="RemoveAction" Value="INSTALLDIR=[INSTALLDIR];INSTALLDIR=[INSTALLDIR];UILevel=[UILevel];ProductCode=[ProductCode];ADDLOCAL=[ADDLOCAL];ADDFEATURES=[ADDFEATURES]" />
@@ -49,6 +51,7 @@
     <UIRef Id="WixUI_ErrorProgressText" />
 
     <Property Id="ARPCONTACT" Value="Ryochan7" />
+    <Property Id="REINSTALLMODE" Value="omus" />
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
       <ComponentRef Id="Component.FakerInput.dll_2134139846" />

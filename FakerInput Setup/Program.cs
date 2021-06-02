@@ -54,13 +54,22 @@ namespace FakerInput_Setup
             //    }
             //};
 
-            project.Version = new Version("0.0.0.1");
+            project.Version = new Version("0.0.0.2");
             project.ControlPanelInfo.Contact = "Ryochan7";
             project.ControlPanelInfo.Manufacturer = "Ryochan7";
             project.LicenceFile = @"Files\LICENSE.rtf";
             project.PreserveTempFiles = true;
             //project.InstallPrivileges = InstallPrivileges.elevated;
             project.InstallScope = InstallScope.perMachine;
+
+            project.MajorUpgrade = new MajorUpgrade
+            {
+                AllowSameVersionUpgrades = true,
+                AllowDowngrades = false,
+                DowngradeErrorMessage = "A newer version of FakerInput was already found. Please uninstall the currently installed product first.",
+                Schedule = UpgradeSchedule.afterInstallInitialize,
+            };
+
             project.BuildMsi();
         }
     }

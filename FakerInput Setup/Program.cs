@@ -54,7 +54,7 @@ namespace FakerInput_Setup
             //    }
             //};
 
-            project.Version = new Version("0.0.0.2");
+            project.Version = new Version("0.1.0");
             project.ControlPanelInfo.Contact = "Ryochan7";
             project.ControlPanelInfo.Manufacturer = "Ryochan7";
             project.LicenceFile = @"Files\LICENSE.rtf";

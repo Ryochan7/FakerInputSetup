@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="bf63c434-bf91-4666-b817-ad7b5c249e94" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.0.0.2" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryochan7">
+  <Product Id="bf63c434-bf91-4666-b817-ad7b5c34ae91" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.1.0" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryochan7">
     <Package InstallerVersion="200" Compressed="yes" Platform="x64" SummaryCodepage="Windows-1252" InstallScope="perMachine" Languages="1033" />
     <Media Id="1" Cabinet="FakerInput.cab" EmbedCab="yes" />
 

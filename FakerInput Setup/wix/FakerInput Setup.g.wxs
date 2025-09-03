@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="bf63c434-bf91-4666-b817-ad7b5c34ae91" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.1.0" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryochan7">
+  <Product Id="17aa3e01-1012-4bf7-b908-1c499909b259" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.1.1" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryochan7">
     <Package InstallerVersion="200" Compressed="yes" Platform="x64" SummaryCodepage="Windows-1252" InstallScope="perMachine" Languages="1033" />
     <Media Id="1" Cabinet="FakerInput.cab" EmbedCab="yes" />
 
@@ -14,18 +14,18 @@
 
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFiles64Folder" Name="ProgramFiles64Folder">
-        <Directory Id="ProgramFiles64Folder.Ryochan7" Name="Ryochan7">
+        <Directory Id="Ryochan7_" Name="Ryochan7">
           <Directory Id="INSTALLDIR" Name="FakerInput">
 
-            <Component Id="Component.FakerInput.dll_2134139846" Guid="bf63c434-bf91-4666-b817-ad7b4ffc90d0" Win64="yes">
-              <File Id="FakerInput.dll_2134139846" Source="Files\FakerInput.dll" />
+            <Component Id="Component.FakerInput.dll_230875994" Guid="17aa3e01-1012-4bf7-b908-1c492d161863" Win64="yes">
+              <File Id="FakerInput.dll_230875994" Source="Files\FakerInput.dll" />
             </Component>
 
-            <Component Id="Component.fakerinput.cat_2803999241" Guid="bf63c434-bf91-4666-b817-ad7be9f215bf" Win64="yes">
-              <File Id="fakerinput.cat_2803999241" Source="Files\fakerinput.cat" />
+            <Component Id="Component.fakerinput.cat_345163310" Guid="17aa3e01-1012-4bf7-b908-1c49ba3efec5" Win64="yes">
+              <File Id="fakerinput.cat_345163310" Source="Files\fakerinput.cat" />
             </Component>
 
-            <Component Id="Component.DRIVER_INF_FILE" Guid="bf63c434-bf91-4666-b817-ad7b8df12bf9" Win64="yes">
+            <Component Id="Component.DRIVER_INF_FILE" Guid="17aa3e01-1012-4bf7-b908-1c49cac61fc1" Win64="yes">
               <File Id="DRIVER_INF_FILE" Source="Files\FakerInput.inf" />
             </Component>
 
@@ -54,8 +54,8 @@
     <Property Id="REINSTALLMODE" Value="omus" />
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
-      <ComponentRef Id="Component.FakerInput.dll_2134139846" />
-      <ComponentRef Id="Component.fakerinput.cat_2803999241" />
+      <ComponentRef Id="Component.FakerInput.dll_230875994" />
+      <ComponentRef Id="Component.fakerinput.cat_345163310" />
       <ComponentRef Id="Component.DRIVER_INF_FILE" />
     </Feature>
 

@@ -17,7 +17,8 @@ namespace FakerInput_Setup
                                     new File(new Id("DRIVER_INF_FILE"), @"Files\FakerInput.inf"))
                                 );
 
-            project.GUID = new Guid("BF63C434-BF91-4666-B817-AD7B5C249E91");
+            project.GUID = new Guid("17AA3E01-1012-4BF7-B908-1C4999F99259");
+            project.UpgradeCode = new Guid("BF63C434-BF91-4666-B817-AD7B5C249E91");
             //project.SourceBaseDir = "<input dir path>";
             //project.OutDir = "<output dir path>";
 #if WIN64
@@ -54,7 +55,7 @@ namespace FakerInput_Setup
             //    }
             //};
 
-            project.Version = new Version("0.1.0");
+            project.Version = new Version("0.1.1");
             project.ControlPanelInfo.Contact = "Ryochan7";
             project.ControlPanelInfo.Manufacturer = "Ryochan7";
             project.LicenceFile = @"Files\LICENSE.rtf";

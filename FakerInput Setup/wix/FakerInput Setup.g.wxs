@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="17aa3e01-1012-4bf7-b908-1c499909b259" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.1.1" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryochan7">
+  <Product Id="17aa3e01-1012-4bf7-b908-1c499909c259" Name="FakerInput" Language="1033" Codepage="Windows-1252" Version="0.1.2" UpgradeCode="bf63c434-bf91-4666-b817-ad7b5c249e91" Manufacturer="Ryodigi Solutions LLC">
     <Package InstallerVersion="200" Compressed="yes" Platform="x64" SummaryCodepage="Windows-1252" InstallScope="perMachine" Languages="1033" />
     <Media Id="1" Cabinet="FakerInput.cab" EmbedCab="yes" />
 
@@ -50,7 +50,7 @@
     <UIRef Id="WixUI_Minimal" />
     <UIRef Id="WixUI_ErrorProgressText" />
 
-    <Property Id="ARPCONTACT" Value="Ryochan7" />
+    <Property Id="ARPCONTACT" Value="Ryodigi Solutions LLC" />
     <Property Id="REINSTALLMODE" Value="omus" />
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">

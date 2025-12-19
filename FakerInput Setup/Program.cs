@@ -55,7 +55,7 @@ namespace FakerInput_Setup
             //    }
             //};
 
-            project.Version = new Version("0.1.2");
+            project.Version = new Version("0.1.1");
             project.ControlPanelInfo.Contact = "Ryodigi Solutions LLC";
             project.ControlPanelInfo.Manufacturer = "Ryodigi Solutions LLC";
             project.LicenceFile = @"Files\LICENSE.rtf";
